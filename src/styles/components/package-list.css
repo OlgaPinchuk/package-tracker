@@ -1,0 +1,9 @@
+.package-list {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../../assets/images/bg.jpg") no-repeat 100% 100%;
+  background-size: cover;
+}
+.package-list h2 {
+  color: var(--color-white);
+}
