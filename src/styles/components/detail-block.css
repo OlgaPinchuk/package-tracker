@@ -1,0 +1,17 @@
+.detail-block {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+  font-weight: 600;
+  line-height: 1.3;
+  display: flex;
+}
+
+.detail-label {
+  margin-right: 10px;
+  color: var(--color-dark-red);
+}
+
+.page-header {
+  display: flex;
+}

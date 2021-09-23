@@ -6,7 +6,7 @@ export default function Home({ data }) {
   return (
     <div className="home">
       <div className="container">
-        <h2>Packages</h2>
+        <h2 className="heading">Packages</h2>
         <div className="packages">{PackageList}</div>
       </div>
     </div>

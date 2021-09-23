@@ -3,6 +3,7 @@ import { useHistory, useParams } from "react-router-dom";
 
 // Project files
 import BackButton from "../components/BackButton";
+import DetailBlock from "../components/DetailBlock";
 
 export default function PackageDetails({ data }) {
   const history = useHistory();
@@ -12,17 +13,35 @@ export default function PackageDetails({ data }) {
   const {
     sender,
     status,
+    eta,
     location_name: location,
     location_coordinate_latitude: lat,
     location_coordinate_longitude: lng,
     notes,
-    verification
+    verification_required,
   } = currentParcel;
+  const [date] = eta.split("T");
 
   return (
-    <>
-      <h1>Package Details</h1>
-      <BackButton history={history} />
-    </>
+    <div className="package-details">
+      <div className="container">
+        <BackButton history={history} />
+        <div className="details">
+          <h3>
+            Order #{id} from {sender}
+          </h3>
+          <DetailBlock label="Location" detail={location} />
+          <DetailBlock label="Delivery status" detail={status} />
+          <DetailBlock label="Delivery date" detail={date} />
+          {notes && <DetailBlock label="Notes" detail={notes} />}
+          {verification_required && (
+            <DetailBlock
+              label="Important"
+              detail="Verification is required for getting this package"
+            />
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
