@@ -1,0 +1,42 @@
+.card {
+  min-height: 150px;
+  background: var(--color-white);
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  font-weight: 700;
+}
+
+.card h3 {
+  color: var(--color-dark-red);
+}
+
+.card .card-content {
+  text-align: center;
+}
+
+.card .view-more {
+  height: 45px;
+  background-color: var(--color-dark-red);
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 500;
+  line-height: 45px;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+@media (min-width: 530px) {
+  .card {
+    min-height: 200px;
+  }
+}

@@ -1,0 +1,24 @@
+.home {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../../assets/images/bg.jpg") no-repeat 100% 100%;
+  background-size: cover;
+}
+.home h2 {
+  margin: var(--space-medium) 0;
+  font-size: var(--font-size-big);
+  color: var(--color-white);
+}
+
+.home .packages {
+  padding: var(--space-medium);
+  width: 100%;
+  /* height: 60vh; */
+  background-color: rgba(238, 238, 238, 0.9);
+  border-radius: 20px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-content: start;
+  grid-gap: 20px;
+}
