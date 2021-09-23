@@ -1,6 +1,7 @@
 .home {
   width: 100%;
   margin: 0 auto;
+  padding: 10px 0;
   background: url("../../assets/images/home-bg.jpg") no-repeat 100% 100%;
   background-size: cover;
 }
