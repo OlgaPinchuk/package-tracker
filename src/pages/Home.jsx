@@ -1,3 +1,4 @@
+// Project files
 import Card from "../components/Card";
 
 export default function Home({ data }) {
@@ -10,6 +11,5 @@ export default function Home({ data }) {
         <div className="packages">{PackageList}</div>
       </div>
     </div>
-
   );
 }

@@ -1,4 +1,4 @@
-// Npm packages
+// NPM Packages
 import { BrowserRouter } from "react-router-dom";
 
 // Project files

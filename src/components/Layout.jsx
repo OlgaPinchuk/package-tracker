@@ -1,4 +1,4 @@
-// Npm packages
+// NPM Packages
 import { Route, Switch } from "react-router-dom";
 
 // Project files

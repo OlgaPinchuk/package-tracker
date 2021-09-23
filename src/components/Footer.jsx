@@ -1,26 +1,19 @@
+// NPM packages
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import SocialIcon from "./SocialIcon";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+// Project files
+import Link from "./Link";
 
 export default function Footer() {
   return (
     <footer>
       <div className="social-media">
-        {/* <a
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faFacebook}  size="lg"/>
-        </a> */}
-        <SocialIcon />
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faInstagram}  size="lg"/>
-        </a>
+        <Link href="https://www.facebook.com">
+          <FontAwesomeIcon icon={faFacebook} size="lg" color="white" />
+        </Link>
+        <Link href="https://www.instagram.com">
+          <FontAwesomeIcon icon={faInstagram} size="lg" color="white" />
+        </Link>
       </div>
       <div className="copyright">
         <p> © 2021 • InstaPacket</p>

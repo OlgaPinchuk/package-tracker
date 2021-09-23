@@ -1,4 +1,19 @@
 footer {
+  padding: var(--space-small);
   background-color: lightslategrey;
-  color: white;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: var(--space-small);
 }

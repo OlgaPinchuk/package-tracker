@@ -4,7 +4,7 @@ import { useHistory, useParams } from "react-router-dom";
 // Project files
 import BackButton from "../components/BackButton";
 import DetailBlock from "../components/DetailBlock";
-import Map from "../styles/components/Map";
+import Map from "../components/Map";
 
 export default function PackageDetails({ data }) {
   const history = useHistory();
@@ -36,10 +36,7 @@ export default function PackageDetails({ data }) {
           <DetailBlock label="Delivery date" detail={date} />
           {notes && <DetailBlock label="Notes" detail={notes} />}
           {verification_required && (
-            <DetailBlock
-              label="Verification"
-              detail="Required"
-            />
+            <DetailBlock label="Verification" detail="Required" />
           )}
           <div className="map-container">
             <Map coordinates={[lat, lng]} />

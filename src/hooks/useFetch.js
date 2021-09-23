@@ -1,4 +1,4 @@
-// Npm packages
+// NPM Packages
 import { useState, useEffect } from "react";
 
 export default function useFetch(url, backupData) {
