@@ -1,20 +1,26 @@
 // Npm packages
 import { useState, useEffect } from "react";
 
-export default function useFetch(url) {
+export default function useFetch(url, backupData) {
   const [status, setStatus] = useState(0); // 0 - loading, 1 - loaded, 2 - error
   const [data, setData] = useState([]);
 
   useEffect(() => {
     fetchData();
-  },[]);
+  }, [url]);
 
   //Methods
   function fetchData() {
-    fetch(url)
-      .then(handleResponseErrors)
-      .then((json) => onSuccess(json))
-      .catch((error) => onFail(error));
+    const sessionStorageItems = sessionStorage.getItem("packages");
+    if (sessionStorageItems) {
+      setData(JSON.parse(sessionStorageItems));
+      setStatus(1);
+    } else {
+      fetch(url)
+        .then(handleResponseErrors)
+        .then((json) => onSuccess(json))
+        .catch((error) => onFail(error));
+    }
   }
 
   function handleResponseErrors(response) {
@@ -25,6 +31,7 @@ export default function useFetch(url) {
   }
 
   function onSuccess(json) {
+    sessionStorage.setItem("packages", JSON.stringify(json));
     setData(json);
     setStatus(1);
   }
@@ -34,6 +41,7 @@ export default function useFetch(url) {
       `The data loading is failed: ${error}. The backup data is used`
     );
     setStatus(2);
+    setData(backupData);
   }
 
   return { status, data };
