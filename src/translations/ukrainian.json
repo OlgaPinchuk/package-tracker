@@ -1,0 +1,33 @@
+{
+  "header": {
+    "mainHeader1": "Залишайся вдома -",
+    "mainHeader2": "Ми подбаємо про доставку"
+  },
+  "homePage": {
+    "header": "Замовлення",
+    "status": {
+      "header": "Статус:",
+      "order-info-received": "Отримано інформацію про замовлення",
+      "on-the-way": "В дорозі",
+      "delivered": "Доставлено",
+      "ready-for-pickup": "Готова до отримання"
+    },
+    "veiwMore": "Деталі"
+  },
+  "packageDetailsPage": {
+    "titlePart1": "Замовлення #",
+    "titlePart2": "від",
+    "labels": {
+      "location": "Місцезнаходження",
+      "status": "Статус доставки",
+      "date": "Дата доставки",
+      "notes": "Нотатки",
+      "verification": "Верифікація"
+    },
+    "required": "Необхідна",
+    "backButton": "На головну"
+  },
+  "common": {
+    "companyName": "InstaPacket"
+  }
+}

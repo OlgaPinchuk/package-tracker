@@ -1,0 +1,33 @@
+{
+  "header": {
+    "mainHeader1": "Just Stay Home -",
+    "mainHeader2": "We Deliver For You"
+  },
+  "homePage": {
+    "header": "Packages",
+    "status": {
+      "header": "Status:",
+      "order-info-received": "Order info received",
+      "on-the-way": "On the way",
+      "delivered": "Delivered",
+      "ready-for-pickup": "Ready for pickup"
+    },
+    "veiwMore": "View more"
+  },
+  "packageDetailsPage": {
+    "titlePart1": "Order #",
+    "titlePart2": "from",
+    "labels": {
+      "location": "Location",
+      "status": "Delivery status",
+      "date": "Delivery date",
+      "notes": "Notes",
+      "verification": "Verification"
+    },
+    "required": "Required",
+    "backButton": "Back"
+  },
+  "common": {
+    "companyName": "InstaPacket"
+  }
+}

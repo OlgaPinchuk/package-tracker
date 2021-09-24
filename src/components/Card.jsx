@@ -1,8 +1,15 @@
 // NPM Packages
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Card({ item }) {
+  // Constants
   const { parcel_id: id, sender, status } = item;
+
+  // Translation
+  const { t } = useTranslation();
+  const statusLabel = t(`homePage:status:${status}`);
+
 
   return (
     <Link to={`/packages/${id}`} className="card">
@@ -12,11 +19,11 @@ export default function Card({ item }) {
       </div>
       <div className="card-content">
         <p>
-          <b>Status:</b> {status}
+          <b>{t("homePage:status:header")}</b> {statusLabel}
         </p>
       </div>
       <div className="view-more">
-        <p>View more</p>
+        <p>{t("homePage:veiwMore")}</p>
       </div>
     </Link>
   );
