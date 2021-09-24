@@ -1,0 +1,19 @@
+footer {
+  padding: var(--space-small);
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  margin-bottom: var(--space-small);
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: var(--space-small);
+}

@@ -1,0 +1,18 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import 'leaflet/dist/leaflet.css';
+
+/* Base */
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/layout.css");
+
+/* Pages  */
+@import url("./pages/home.css");
+@import url("./pages/package-details.css");
+
+/* Components */
+@import url("./components/card.css");
+@import url("./components/detail-block.css");
+@import url("./components/header.css");
+@import url("./components/footer.css");
