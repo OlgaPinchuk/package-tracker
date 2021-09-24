@@ -8,8 +8,7 @@ export default function Card({ item }) {
 
   // Translation
   const { t } = useTranslation();
-  const statusLabel = t(`homePage:status:${status}`);
-
+  const statusLabel = t(`home:status:${status}`);
 
   return (
     <Link to={`/packages/${id}`} className="card">
@@ -19,11 +18,11 @@ export default function Card({ item }) {
       </div>
       <div className="card-content">
         <p>
-          <b>{t("homePage:status:header")}</b> {statusLabel}
+          <b>{t("home:status:header")}</b> {statusLabel}
         </p>
       </div>
       <div className="view-more">
-        <p>{t("homePage:veiwMore")}</p>
+        <p>{t("home:veiwMore")}</p>
       </div>
     </Link>
   );

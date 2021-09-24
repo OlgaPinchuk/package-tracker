@@ -7,7 +7,7 @@ export default function BackButton({ history }) {
 
   return (
     <button className="back-button" onClick={() => history.goBack()}>
-      ❮ {t("packageDetailsPage:backButton")}
+      ❮ {t("packageDetails:backButton")}
     </button>
   );
 }

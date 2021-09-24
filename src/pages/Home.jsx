@@ -13,7 +13,7 @@ export default function Home({ data }) {
   return (
     <div className="home">
       <div className="container">
-        <h2 className="heading">{t("homePage:header")}</h2>
+        <h2 className="heading">{t("home:header")}</h2>
         <div className="packages">{PackageList}</div>
       </div>
     </div>

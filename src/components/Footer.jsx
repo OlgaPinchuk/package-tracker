@@ -1,8 +1,9 @@
 // NPM packages
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 // Project files
-import Link from "./Link";
+import Link from "./common/Link";
 
 export default function Footer() {
   return (

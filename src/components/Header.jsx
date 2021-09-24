@@ -15,11 +15,10 @@ export default function Header() {
 
   // Methods
   function changeLanguage() {
-    if(language === "en") {
+    if (language === "en") {
       i18n.changeLanguage("ua");
       setLanguage("ua");
-    }
-    else {
+    } else {
       i18n.changeLanguage("en");
       setLanguage("en");
     }
@@ -31,7 +30,9 @@ export default function Header() {
       <h1>
         {t("header:mainHeader1")} <span>{t("header:mainHeader2")}</span>
       </h1>
-      <button className="language-toggler" onClick={changeLanguage}>{language === "en" ? "UA" : "EN"}</button>
+      <button className="language-toggler" onClick={changeLanguage}>
+        {language === "en" ? "UA" : "EN"}
+      </button>
     </header>
   );
 }

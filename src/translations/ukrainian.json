@@ -3,7 +3,7 @@
     "mainHeader1": "Залишайся вдома -",
     "mainHeader2": "Ми подбаємо про доставку"
   },
-  "homePage": {
+  "home": {
     "header": "Замовлення",
     "status": {
       "header": "Статус:",
@@ -14,7 +14,7 @@
     },
     "veiwMore": "Деталі"
   },
-  "packageDetailsPage": {
+  "packageDetails": {
     "titlePart1": "Замовлення #",
     "titlePart2": "від",
     "labels": {
