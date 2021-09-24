@@ -1,23 +1,21 @@
 :root {
   /* Colors */
---color-dark-grey: #333333;
---color-grey: #656d78;
---color-light-grey: #eeeeee;
---color-dark-red: #e2231a;
---color-white: #ffffff;
+  --color-dark-grey: #333333;
+  --color-grey: #768798;
+  --color-dark-red: #e2231a;
+  --color-white: #ffffff;
 
+  /* Space */
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-big: 24px;
 
- /* Space */
- --space-small: 8px;
- --space-medium: 16px;
- --space-big: 24px;
+  /* Dimensions */
+  --max-width: 1200px;
 
- /* Dimensions */
- --max-width: 900px;
-
- /* Font sizes */
- --font-size-small: 12px;
- --font-size-medium: 16px;
- --font-size-big: 24px;
- --font-size-ultra: 36px;
+  /* Font sizes */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-big: 24px;
+  --font-size-ultra: 36px;
 }

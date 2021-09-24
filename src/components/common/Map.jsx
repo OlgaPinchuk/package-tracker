@@ -1,4 +1,4 @@
-// Npm files
+// NPM Packages
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png"
 import {Icon} from 'leaflet'

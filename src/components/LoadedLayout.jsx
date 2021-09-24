@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "../pages/Home";
 import PackageDetails from "../pages/PackageDetails";
 
-export default function Layout({ data }) {
+export default function LoadedLayout({ data }) {
   return (
     <Switch>
       <Route path="/" exact>

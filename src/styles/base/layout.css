@@ -24,7 +24,7 @@ a {
 
 .container {
   width: 90vw;
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -35,9 +35,9 @@ a {
 }
 
 .back-button {
-  margin: 15px 0;
-  font-size: 20px;
+  margin: var(--space-medium) 0;
+  font-size: var(--font-size-big);
   color: var(--color-white);
   background: none;
   border: none;
- }
+}

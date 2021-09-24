@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 
 // Project files
 import Header from "./components/Header";
-import Layout from "./components/Layout";
+import LoadedLayout from "./components/LoadedLayout";
 import Footer from "./components/Footer";
 import useFetch from "./hooks/useFetch";
 import backupData from "./data/backup.json";
@@ -18,9 +18,7 @@ export default function App() {
       <BrowserRouter>
         <Header />
         {status === 0 && <div>Loading...</div>}
-        {status === 1 && <Layout data={data} />}
-        {/* TODO: NoFound page */}
-        {status === 2 && <div>Not found</div>}
+        {status === 1 && <LoadedLayout data={data} />}
         <Footer />
       </BrowserRouter>
     </div>

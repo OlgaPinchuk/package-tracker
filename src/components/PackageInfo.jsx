@@ -1,4 +1,4 @@
-// NPM packages
+// NPM Packages
 import { useTranslation } from "react-i18next";
 
 // Project files

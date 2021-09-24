@@ -13,7 +13,7 @@
 .card .card-header {
   display: flex;
   justify-content: space-between;
-  padding: 14px;
+  padding: var(--space-medium);
   font-weight: 700;
 }
 
