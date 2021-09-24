@@ -1,7 +1,7 @@
 .home {
-  width: 100%;
   margin: 0 auto;
   padding: var(--space-small) 0;
+  width: 100%;
   background: url("../../assets/images/home-bg.jpg") no-repeat 100% 100%;
   background-size: cover;
 }
