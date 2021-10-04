@@ -6,7 +6,7 @@ This React application was developed during the Novare Autumn coding course and 
 
 
 ## App description
-It's an web app for delivery company's customers that displays a list of orders (or parcels) with some details they need to know like order status, ETAs, pickup locations, etc.
+It's a web app for delivery company's customers that displays a list of orders (or parcels) with some details they need to know: the order status, ETAs, pickup locations, etc.
 [Visit the website](https://insta-packet.web.app/)
 
 ## Get started
